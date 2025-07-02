@@ -1,115 +1,37 @@
-<!-- holiday-tours.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Holiday Tours - TDivineSpark</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    :root {
-      --color-primary: #006D77;
-      --color-secondary: #83c5be;
-      --color-light: #EDF6F9;
-    }
-    body {
-      background-color: var(--color-light);
-      color: var(--color-primary);
-      font-family: Arial, sans-serif;
-    }
-  </style>
+  <!-- same head as above with swiper and styles -->
 </head>
 <body>
-  <header class="bg-[#003333] text-white py-4">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center space-x-3">
-        <img src="https://tdspark.github.io/tdivinespark-site/logo.png" alt="TDivineSpark Logo" class="h-10">
-        <span class="text-xl font-bold">TDivineSpark</span>
-      </a>
-      <nav class="space-x-6">
-        <a href="TdivineSpark.html">Home</a>
-        <a href="holiday-tours.html">Holiday Tours</a>
-        <a href="flights.html">Flights</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-    </div>
-  </header>
+  <!-- header + banner same as index -->
+  <div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
 
-  <div class="bg-[#006D77] text-[#EDF6F9] py-2 text-sm font-semibold text-center">
-    Call us now: <a href="tel:+94774347478" class="underline">+94 774 347 478</a> | 24/7 Support Available
-  </div>
-
-  <main class="max-w-6xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold text-center mb-10">Top Holiday Tours in Sri Lanka</h1>
-
-    <div class="space-y-6">
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/elephants.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Elephant Safari</h2>
-          <p>Experience the majestic elephants in their natural habitat with guided safaris and unforgettable wildlife encounters.</p>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Top Holiday Tours in Sri Lanka</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- example slide -->
+        <div class="swiper-slide">
+          <img src="images/elephants.jpg" alt="Elephant Safari" class="w-full rounded shadow">
+          <h2 class="font-semibold mt-2">Pinnawala Elephant Orphanage</h2>
         </div>
+        <!-- repeat for each tour image + description -->
       </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/sigiriya-rock.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Sigiriya Rock Fortress</h2>
-          <p>Explore the ancient rock fortress, a UNESCO World Heritage Site, with stunning views and historic ruins.</p>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/temple-of-tooth.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Temple of the Tooth</h2>
-          <p>Visit the sacred Buddhist temple in Kandy housing the relic of the tooth of the Buddha, a significant pilgrimage site.</p>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/tea-plucking.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Tea Plantation Experience</h2>
-          <p>Participate in tea plucking and learn about the production process in Sri Lanka's lush tea estates.</p>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/tea-gardens.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Scenic Tea Gardens</h2>
-          <p>Explore the vibrant green tea gardens in the hill country, perfect for nature walks and photography.</p>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/nuwara-eliya.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Nuwara Eliya</h2>
-          <p>Discover the cool climate and colonial architecture of "Little England" in Sri Lanka's hill country.</p>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-md rounded-lg flex flex-col md:flex-row overflow-hidden">
-        <div class="tour-image" style="background-image: url('images/galle-fort.jpg');"></div>
-        <div class="tour-content">
-          <h2 class="text-xl font-semibold mb-2">Galle Fort</h2>
-          <p>Visit the well-preserved colonial heritage site with beautiful ocean views, built by the Portuguese and fortified by the Dutch.</p>
-        </div>
-      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </main>
 
-  <footer class="bg-[#006D77] text-white py-6 mt-12">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between flex-wrap gap-4">
-      <p>&copy; 2025 TDivineSpark. All rights reserved.</p>
-      <nav class="space-x-4">
-        <a href="#" class="hover:underline">Privacy Policy</a>
-        <a href="#" class="hover:underline">Terms of Service</a>
-      </nav>
-    </div>
-  </footer>
+  <footer class="bg-[var(--color-primary)] text-[var(--color-light)] text-center py-4">&copy; 2025 TDivineSpark</footer>
+
+  <script>
+    new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      autoplay: { delay: 2500 },
+      loop: true,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    });
+  </script>
 </body>
 </html>
-
