@@ -1,37 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- same head as above with swiper and styles -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Holiday Tours - TDivineSpark</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary: #006d77;
+      --color-secondary: #83c5be;
+      --color-light: #edf6f9;
+    }
+    body {
+      background-color: var(--color-light);
+      color: var(--color-primary);
+      font-family: Arial, sans-serif;
+    }
+    nav a {
+      color: var(--color-light);
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+    nav a:hover {
+      color: var(--color-secondary);
+    }
+    .call-banner {
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
+      font-weight: bold;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- header + banner same as index -->
-  <div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
 
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-center mb-8">Top Holiday Tours in Sri Lanka</h1>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- example slide -->
-        <div class="swiper-slide">
-          <img src="images/elephants.jpg" alt="Elephant Safari" class="w-full rounded shadow">
-          <h2 class="font-semibold mt-2">Pinnawala Elephant Orphanage</h2>
-        </div>
-        <!-- repeat for each tour image + description -->
-      </div>
-      <div class="swiper-pagination"></div>
+<header class="bg-[var(--color-primary)] text-white py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.png" alt="TDivineSpark logo" class="h-10">
+      <span class="text-xl font-bold">TDivineSpark</span>
+    </a>
+    <nav class="flex items-center">
+      <a href="index.html">Home</a>
+      <a href="holiday-tours.html">Holiday Tours</a>
+      <a href="flights.html">Flights</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
+
+<main class="max-w-6xl mx-auto p-6">
+  <h1 class="text-3xl font-bold text-center mb-8">Our Holiday Tour Destinations</h1>
+
+  <!-- Tour 1 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4679.JPG" alt="Pinnawala" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Pinnawala Elephant Orphanage</h2>
+      <p>Observe elephants in a natural sanctuary — a heartwarming experience for wildlife lovers in Sri Lanka.</p>
     </div>
-  </main>
+  </div>
 
-  <footer class="bg-[var(--color-primary)] text-[var(--color-light)] text-center py-4">&copy; 2025 TDivineSpark</footer>
+  <!-- Tour 2 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4673.JPG" alt="Sigiriya Rock" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Sigiriya Rock Fortress</h2>
+      <p>A UNESCO World Heritage Site with breathtaking views and rich historical murals — perfect for adventurers.</p>
+    </div>
+  </div>
 
-  <script>
-    new Swiper('.mySwiper', {
-      slidesPerView: 1,
-      pagination: { el: '.swiper-pagination', clickable: true },
-      autoplay: { delay: 2500 },
-      loop: true,
-      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    });
-  </script>
+  <!-- Tour 3 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4676.JPG" alt="Temple of the Tooth" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Temple of the Tooth</h2>
+      <p>Explore a deeply spiritual and architectural marvel located in Kandy — one of the most sacred Buddhist sites.</p>
+    </div>
+  </div>
+
+  <!-- Tour 4 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4675.JPG" alt="Tea Plantation" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Tea Plantation Experience</h2>
+      <p>Walk through lush tea gardens and witness the traditional process of tea plucking and tasting in Nuwara Eliya.</p>
+    </div>
+  </div>
+
+  <!-- Tour 5 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4678.JPG" alt="Whale Watching" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Whale Watching in Mirissa</h2>
+      <p>Experience thrilling boat rides and spot blue whales, dolphins, and more in the crystal-clear southern waters.</p>
+    </div>
+  </div>
+
+  <!-- Tour 6 -->
+  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
+    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4671.JPG" alt="Galle Fort" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
+    <div class="p-4 flex flex-col justify-center">
+      <h2 class="text-xl font-bold mb-2">Galle Fort</h2>
+      <p>Explore colonial charm with cobbled streets and coastal views — a blend of Portuguese architecture and Sri Lankan culture.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-[var(--color-primary)] text-white py-6 mt-12">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between flex-wrap gap-4">
+    <p>&copy; 2025 TDivineSpark. All rights reserved.</p>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
