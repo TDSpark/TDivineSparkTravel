@@ -14,7 +14,7 @@
       --color-light: #edf6f9;
     }
     body { background: var(--color-light); color: var(--color-primary); font-family: Arial, sans-serif; }
-    nav a { color: var(--color-light); font-weight: 600; }
+    nav a { color: var(--color-light); font-weight: 600; margin-left: 1rem; }
     nav a:hover { color: var(--color-secondary); }
     .call-banner { background: var(--color-secondary); color: var(--color-primary); font-weight: bold; text-align: center; padding: .5rem; }
     .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
@@ -29,7 +29,7 @@
       <img src="logo.png" alt="TDivineSpark logo" class="h-10">
       <span class="text-xl font-bold">TDivineSpark</span>
     </a>
-    <nav>
+    <nav class="flex items-center">
       <a href="index.html">Home</a>
       <a href="holiday-tours.html">Holiday Tours</a>
       <a href="flights.html">Flights</a>
@@ -40,24 +40,19 @@
 
 <div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
 
-<section class="fade-in mt-6 mx-auto max-w-6xl px-4">
-  <h1 class="text-3xl font-bold text-center mb-4">Discover Sri Lanka</h1>
-  <p class="max-w-3xl mx-auto text-center mb-8">
-    A beautiful island rich in culture, nature, and adventure. Whether you're visiting tea plantations,
-    ancient ruins, or pristine beaches, Sri Lanka promises an unforgettable journey.
-  </p>
-  <div class="w-full h-64 mb-8 rounded shadow-lg overflow-hidden">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy" class="w-full h-full border-0"></iframe>
-  </div>
-</section>
-
 <section class="fade-in swiper-container max-w-6xl mx-auto px-4 py-8">
   <h2 class="text-2xl font-bold text-center mb-6">Highlights</h2>
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/elephants.jpg" alt="Elephant Safari"></div>
-      <div class="swiper-slide"><img src="images/sigiriya-rock.jpg" alt="Sigiriya Rock Fortress"></div>
-      <div class="swiper-slide"><img src="images/tea-plucking.jpg" alt="Tea Plantation Experience"></div>
+      <div class="swiper-slide">
+        <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4678.JPG" alt="Whale Watching" class="w-full rounded-lg shadow-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4675.JPG" alt="Nuwara Eliya" class="w-full rounded-lg shadow-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4673.JPG" alt="Sigiriya Rock" class="w-full rounded-lg shadow-lg">
+      </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
