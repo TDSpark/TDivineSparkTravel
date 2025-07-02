@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Holiday Tours - TDivineSpark</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     :root {
       --color-primary: #006d77;
@@ -12,24 +12,20 @@
       --color-light: #edf6f9;
     }
     body {
-      background-color: var(--color-light);
+      background: var(--color-light);
       color: var(--color-primary);
       font-family: Arial, sans-serif;
     }
     nav a {
       color: var(--color-light);
       font-weight: 600;
-      margin-left: 1rem;
     }
     nav a:hover {
       color: var(--color-secondary);
     }
-    .call-banner {
-      background-color: var(--color-secondary);
-      color: var(--color-primary);
-      font-weight: bold;
-      text-align: center;
-      padding: 0.5rem;
+    .tour-grid img {
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -41,74 +37,32 @@
       <img src="logo.png" alt="TDivineSpark logo" class="h-10">
       <span class="text-xl font-bold">TDivineSpark</span>
     </a>
-    <nav class="flex items-center">
-      <a href="index.html">Home</a>
-      <a href="holiday-tours.html">Holiday Tours</a>
-      <a href="flights.html">Flights</a>
+    <nav>
+      <a href="index.html" class="mr-4">Home</a>
+      <a href="holiday-tours.html" class="mr-4">Holiday Tours</a>
+      <a href="flights.html" class="mr-4">Flights</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </div>
 </header>
 
-<div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
+<div class="bg-[var(--color-secondary)] text-[var(--color-primary)] text-center font-semibold py-2">
+  Call us now: +94 774 347 478
+</div>
 
 <main class="max-w-6xl mx-auto p-6">
-  <h1 class="text-3xl font-bold text-center mb-8">Our Holiday Tour Destinations</h1>
-
-  <!-- Tour 1 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4679.JPG" alt="Pinnawala" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Pinnawala Elephant Orphanage</h2>
-      <p>Observe elephants in a natural sanctuary — a heartwarming experience for wildlife lovers in Sri Lanka.</p>
-    </div>
+  <h1 class="text-3xl font-bold text-center mb-8">Explore Our Holiday Tours</h1>
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 tour-grid">
+    <img src="images/IMG_4678.JPG" alt="Whale Watching">
+    <img src="images/IMG_4675.JPG" alt="Nuwara Eliya">
+    <img src="images/IMG_4673.JPG" alt="Sigiriya Rock">
+    <img src="images/IMG_4674.PNG" alt="Temple of the Tooth">
+    <img src="images/IMG_4676.JPG" alt="Tea Plantation Experience">
+    <img src="images/IMG_4677.JPG" alt="Tea Gardens">
+    <img src="images/IMG_4672.JPG" alt="Galle Fort">
+    <img src="images/IMG_4679.JPG" alt="Lake House">
+    <img src="images/IMG_4671.JPG" alt="Whales Group">
   </div>
-
-  <!-- Tour 2 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4673.JPG" alt="Sigiriya Rock" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Sigiriya Rock Fortress</h2>
-      <p>A UNESCO World Heritage Site with breathtaking views and rich historical murals — perfect for adventurers.</p>
-    </div>
-  </div>
-
-  <!-- Tour 3 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4676.JPG" alt="Temple of the Tooth" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Temple of the Tooth</h2>
-      <p>Explore a deeply spiritual and architectural marvel located in Kandy — one of the most sacred Buddhist sites.</p>
-    </div>
-  </div>
-
-  <!-- Tour 4 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4675.JPG" alt="Tea Plantation" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Tea Plantation Experience</h2>
-      <p>Walk through lush tea gardens and witness the traditional process of tea plucking and tasting in Nuwara Eliya.</p>
-    </div>
-  </div>
-
-  <!-- Tour 5 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4678.JPG" alt="Whale Watching" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Whale Watching in Mirissa</h2>
-      <p>Experience thrilling boat rides and spot blue whales, dolphins, and more in the crystal-clear southern waters.</p>
-    </div>
-  </div>
-
-  <!-- Tour 6 -->
-  <div class="bg-white rounded-lg shadow-md mb-6 flex flex-col md:flex-row overflow-hidden">
-    <img src="https://raw.githubusercontent.com/TDSpark/TDivineSparkTravel/main/images/IMG_4671.JPG" alt="Galle Fort" class="w-full md:w-1/2 object-cover h-64 md:h-auto">
-    <div class="p-4 flex flex-col justify-center">
-      <h2 class="text-xl font-bold mb-2">Galle Fort</h2>
-      <p>Explore colonial charm with cobbled streets and coastal views — a blend of Portuguese architecture and Sri Lankan culture.</p>
-    </div>
-  </div>
-
 </main>
 
 <footer class="bg-[var(--color-primary)] text-white py-6 mt-12">
