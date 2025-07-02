@@ -7,96 +7,68 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     :root {
-      --color-primary: #006D77;
+      --color-primary: #006d77;
       --color-secondary: #83c5be;
-      --color-light: #EDF6F9;
+      --color-light: #edf6f9;
     }
     body {
-      font-family: Arial, sans-serif;
-      background: var(--color-light);
+      background-color: var(--color-light);
       color: var(--color-primary);
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: var(--color-primary);
-      color: var(--color-light);
+      font-family: Arial, sans-serif;
     }
     nav a {
       color: var(--color-light);
-      margin: 0 1rem;
       font-weight: 600;
       text-decoration: none;
+      margin: 0 1rem;
     }
     nav a:hover {
       color: var(--color-secondary);
     }
+    .logo {
+      height: 40px;
+    }
     .call-banner {
-      background-color: #83c5be;
-      color: #000;
-      padding: 0.5rem;
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
       text-align: center;
+      padding: 0.5rem;
       font-weight: bold;
     }
-    .contact-box {
-      background-color: white;
-      padding: 2rem;
-      max-width: 600px;
-      margin: 2rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    h1 {
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 1.5rem;
-    }
   </style>
-
-<style>
-@keyframes fadeInUp {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-in-out;
-}
-</style>
-
 </head>
 <body>
+  <header class="bg-[var(--color-primary)] text-white py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <span class="text-xl font-bold">TDivineSpark</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="holiday-tours.html">Holiday Tours</a>
+        <a href="flights.html">Flights</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="bg-[#003333] text-white py-4">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-    <a href="TdivineSpark.html" class="flex items-center gap-2">
-      <img src="logo.png" alt="TDivineSpark Logo" class="h-10">
-      <span class="text-xl font-bold text-light">TDivineSpark</span>
-    </a>
-    <nav>
-      <a href="TdivineSpark.html">Home</a>
-      <a href="holiday-tours.html">Holiday Tours</a>
-      <a href="flights.html">Flights</a>
-      <a href="contact.html" class="underline">Contact Us</a>
-    </nav>
-  </div>
-</header>
+  <div class="call-banner">Call us now: +94-774347478</div>
 
-<div class="call-banner">Call Now: +94-774347478</div>
+  <main class="max-w-3xl mx-auto p-8 mt-6 bg-white shadow rounded">
+    <h1 class="text-3xl font-bold mb-4">Contact Us</h1>
+    <p class="mb-6">Have questions or want to plan your next trip with TDivineSpark? Get in touch with us!</p>
 
-<main>
-  <h1>Contact Us</h1>
-  <div class="contact-box">
-    <p><strong>Contact Person:</strong> T. Diroshan</p>
-    <p><strong>Phone:</strong> +94-774347478</p>
-    <p><strong>Email:</strong> tdivinespark@gmail.com</p>
- no    <p><strong>Office Hours:</strong> Monday – Saturday, 9:00 AM – 6:00 PM</p>
-    <p class="mt-4"><a href="mailto:tdivinespark@gmail.com" class="text-blue-600 hover:underline">Send us an email</a></p>
-  </div>
-</main>
+    <div class="space-y-4 text-lg">
+      <p><strong>Contact Person:</strong> T. Diroshan</p>
+      <p><strong>Phone:</strong> +94-774347478</p>
+      <p><strong>Email:</strong> <a href="mailto:tdivinespark@gmail.com" class="text-[var(--color-primary)] underline">tdivinespark@gmail.com</a></p>
+      <p><strong>Website:</strong> <a href="https://www.tdivinespark.com" target="_blank" class="text-[var(--color-primary)] underline">www.tdivinespark.com</a></p>
+    </div>
+  </main>
 
-<footer class="text-center py-4 mt-8">
-  &copy; 2025 TDivineSpark (Pvt.) Ltd. All rights reserved.
-</footer>
-
+  <footer class="bg-[var(--color-primary)] text-[var(--color-light)] py-4 mt-10 text-center">
+    &copy; 2025 TDivineSpark. All rights reserved.
+  </footer>
 </body>
 </html>
