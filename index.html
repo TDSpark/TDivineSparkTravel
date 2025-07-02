@@ -2,137 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Holiday Tours - TDivineSpark</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TDivineSpark</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
   <style>
     :root {
-      --color-primary: #003333;
+      --color-primary: #006d77;
       --color-secondary: #83c5be;
       --color-light: #edf6f9;
     }
-    body {
-      background-color: var(--color-light);
-      color: var(--color-primary);
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: var(--color-primary);
-      color: var(--color-light);
-    }
-    nav a {
-      color: var(--color-light);
-      margin: 0 1rem;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: var(--color-secondary);
-      text-decoration: underline;
-    }
-    .logo {
-      height: 50px;
-    }
-    .tour-card {
-      background-color: white;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .tour-image {
-      flex: 1 1 300px;
-      min-width: 300px;
-      height: 200px;
-      background-position: center;
-      background-size: cover;
-    }
-    .tour-content {
-      flex: 2 1 400px;
-      padding: 1rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  .marquee {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    font-weight: bold;
-  }
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-  }
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
+    body { background: var(--color-light); color: var(--color-primary); font-family: Arial, sans-serif; }
+    nav a { color: var(--color-light); font-weight: 600; }
+    nav a:hover { color: var(--color-secondary); }
+    .call-banner { background: var(--color-secondary); color: var(--color-primary); font-weight: bold; text-align: center; padding: .5rem; }
+    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
+    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
-  <header class="p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-4">
-        <img src="logo.png" alt="Logo" class="logo" />
-        <span class="text-white font-bold text-xl">TDivineSpark</span>
-      </div>
-      <nav>
-        <a href="TdivineSpark.html">Home</a>
-        <a href="holiday-tours.html">Holiday Tours</a>
-        <a href="flights.html">Flights</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-    </div>
-  </header>
 
-  <div class="marquee">
-    <span>Call us now: +94-774347478</span>
+<header class="bg-[var(--color-primary)] text-white py-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.png" alt="TDivineSpark logo" class="h-10">
+      <span class="text-xl font-bold">TDivineSpark</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="holiday-tours.html">Holiday Tours</a>
+      <a href="flights.html">Flights</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
   </div>
+</header>
 
-  <main class="max-w-6xl mx-auto p-6">
-    <h1 class="text-3xl font-bold text-center mb-6">Welcome to Sri Lanka</h1>
-    <section class="about-sri-lanka mb-8 p-4 bg-white rounded shadow">
-      <h2 class="text-2xl font-semibold mb-4">About Sri Lanka</h2>
-      <p>Sri Lanka is a beautiful island nation known for its rich culture, stunning landscapes, and warm hospitality.</p>
-      <div class="map-container mt-4">
-        <img src="images/sri-lanka-map.png" alt="Map of Sri Lanka" class="mx-auto max-w-full h-auto rounded" />
-      </div>
-    </section>
+<div class="call-banner">Call us now: +94 774 347 478 | 24/7 Support Available</div>
 
-    <section class="slideshow mb-8">
-      <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded shadow">
-        <div class="slides flex transition-transform duration-500 ease-in-out">
-          <img src="images/elephants.jpg" alt="Elephant Safari" class="w-full flex-shrink-0" />
-          <img src="images/sigiriya-rock.jpg" alt="Sigiriya Rock Fortress" class="w-full flex-shrink-0" />
-          <img src="images/temple-of-tooth.jpg" alt="Temple of the Tooth" class="w-full flex-shrink-0" />
-          <img src="images/tea-plucking.jpg" alt="Tea Plantation Experience" class="w-full flex-shrink-0" />
-          <img src="images/tea-gardens.jpg" alt="Scenic Tea Gardens" class="w-full flex-shrink-0" />
-          <img src="images/nuwara-eliya.jpg" alt="Nuwara Eliya" class="w-full flex-shrink-0" />
-          <img src="images/galle-fort.jpg" alt="Galle Fort" class="w-full flex-shrink-0" />
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="holiday-tours.html" class="inline-block bg-primary text-light px-6 py-2 rounded hover:bg-secondary transition">Explore Holiday Tours</a>
-      </div>
-    </section>
-  </main>
+<section class="fade-in mt-6 mx-auto max-w-6xl px-4">
+  <h1 class="text-3xl font-bold text-center mb-4">Discover Sri Lanka</h1>
+  <p class="max-w-3xl mx-auto text-center mb-8">
+    A beautiful island rich in culture, nature, and adventure. Whether you're visiting tea plantations,
+    ancient ruins, or pristine beaches, Sri Lanka promises an unforgettable journey.
+  </p>
+  <div class="w-full h-64 mb-8 rounded shadow-lg overflow-hidden">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." loading="lazy" class="w-full h-full border-0"></iframe>
+  </div>
+</section>
 
-  <footer class="bg-primary text-light py-6 mt-12">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between flex-wrap gap-4">
-      <p>&copy; 2025 TDivineSpark. All rights reserved.</p>
-      <nav class="space-x-4">
-        <a href="#" class="hover:underline">Privacy Policy</a>
-        <a href="#" class="hover:underline">Terms of Service</a>
-      </nav>
+<section class="fade-in swiper-container max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-2xl font-bold text-center mb-6">Highlights</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/elephants.jpg" alt="Elephant Safari"></div>
+      <div class="swiper-slide"><img src="images/sigiriya-rock.jpg" alt="Sigiriya Rock Fortress"></div>
+      <div class="swiper-slide"><img src="images/tea-plucking.jpg" alt="Tea Plantation Experience"></div>
     </div>
-  </footer>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="text-center mt-6">
+    <a href="holiday-tours.html" class="bg-[var(--color-primary)] text-[var(--color-light)] px-6 py-3 rounded hover:bg-[var(--color-secondary)] transition">
+      Explore Holiday Tours →
+    </a>
+  </div>
+</section>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    autoplay: { delay: 3000 },
+    loop: true,
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fade-in').forEach((el, i) => {
+      el.style.animationDelay = `${i * 0.3}s`;
+    });
+  });
+</script>
+
 </body>
 </html>
