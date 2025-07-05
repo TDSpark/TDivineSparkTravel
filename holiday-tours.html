@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Holiday Tours - TDivineSpark</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     :root {
-      --color-primary: #006d77;
+      --color-primary: #213448;
       --color-secondary: #83c5be;
       --color-light: #edf6f9;
+      --color-button: #83c5be;
+      --color-button-hover: #b2e0da;
     }
     body {
       background: var(--color-light);
@@ -17,62 +19,91 @@
       font-family: Arial, sans-serif;
     }
     nav a {
-      color: var(--color-light);
+      color: var(--color-button);
       font-weight: 600;
+      margin-left: 1.5rem;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: var(--color-secondary);
+      color: var(--color-button-hover);
     }
-    .tour-grid img {
+    .tour-section {
+      margin-bottom: 2.5rem;
+    }
+    .tour-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
       border-radius: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
 
 <header class="bg-[var(--color-primary)] text-white py-4">
-  <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+  <div class="max-w-7xl mx-auto flex flex-wrap md:flex-nowrap justify-between items-center px-4">
     <a href="index.html" class="flex items-center space-x-3">
       <img src="logo.png" alt="TDivineSpark logo" class="h-10">
       <span class="text-xl font-bold">TDivineSpark</span>
     </a>
-    <nav>
-      <a href="index.html" class="mr-4">Home</a>
-      <a href="holiday-tours.html" class="mr-4">Holiday Tours</a>
-      <a href="flights.html" class="mr-4">Flights</a>
+    <nav class="flex flex-wrap justify-end w-full md:w-auto mt-4 md:mt-0">
+      <a href="index.html">Home</a>
+      <a href="holiday-tours.html">Holiday Tours</a>
+      <a href="flights.html">Flights</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </div>
 </header>
 
-<div class="bg-[var(--color-secondary)] text-[var(--color-primary)] text-center font-semibold py-2">
-  Call us now: +94 774 347 478
-</div>
+<main class="max-w-6xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold text-center mb-10">Our Holiday Tours</h1>
 
-<main class="max-w-6xl mx-auto p-6">
-  <h1 class="text-3xl font-bold text-center mb-8">Explore Our Holiday Tours</h1>
-  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 tour-grid">
-    <img src="images/IMG_4678.JPG" alt="Whale Watching">
-    <img src="images/IMG_4675.JPG" alt="Nuwara Eliya">
-    <img src="images/IMG_4673.JPG" alt="Sigiriya Rock">
-    <img src="images/IMG_4674.PNG" alt="Temple of the Tooth">
-    <img src="images/IMG_4676.JPG" alt="Tea Plantation Experience">
-    <img src="images/IMG_4677.JPG" alt="Tea Gardens">
-    <img src="images/IMG_4672.JPG" alt="Galle Fort">
-    <img src="images/IMG_4679.JPG" alt="Lake House">
-    <img src="images/IMG_4671.JPG" alt="Whales Group">
-  </div>
+  <!-- Tour List -->
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">1. Whale Watching in Mirissa</h2>
+    <img src="images/IMG_4678.JPG" alt="Whale Watching" class="tour-image mb-3">
+    <p>Experience the breathtaking sight of blue whales and dolphins on the southern coast of Sri Lanka in Mirissa. Best viewed from November to April.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">2. Nuwara Eliya Tea Estates</h2>
+    <img src="images/IMG_4675.JPG" alt="Nuwara Eliya" class="tour-image mb-3">
+    <p>Explore lush green tea plantations in the cool climate of Nuwara Eliya. Walk through tea trails, visit factories, and enjoy breathtaking views of the hill country.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">3. Sigiriya Rock Fortress</h2>
+    <img src="images/IMG_4673.JPG" alt="Sigiriya Rock" class="tour-image mb-3">
+    <p>Climb the 5th-century fortress of King Kashyapa and witness stunning frescoes, landscaped gardens, and 360-degree views from the summit.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">4. Temple of the Tooth, Kandy</h2>
+    <img src="images/IMG_4672.JPG" alt="Temple of the Tooth" class="tour-image mb-3">
+    <p>Visit Sri Lanka's most sacred Buddhist temple housing the relic of the tooth of the Buddha. Explore cultural rituals and the beautiful lakeside town of Kandy.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">5. Tea Garden Trails</h2>
+    <img src="images/IMG_4671.JPG" alt="Tea Garden" class="tour-image mb-3">
+    <p>Wander through rolling hills and misty plantations. Enjoy a serene experience amidst the green valleys of central Sri Lanka.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">6. Colonial Galle Fort</h2>
+    <img src="images/IMG_4670.JPG" alt="Galle Fort" class="tour-image mb-3">
+    <p>Step into history at this UNESCO World Heritage site. Galle Fort combines colonial charm, art galleries, boutique stores, and scenic sunset views.</p>
+  </section>
+
+  <section class="tour-section">
+    <h2 class="text-2xl font-semibold mb-2">7. Ella Adventure</h2>
+    <img src="images/IMG_4679.JPG" alt="Ella" class="tour-image mb-3">
+    <p>Hike Little Adam’s Peak, walk across Nine Arches Bridge, and enjoy scenic train rides through the highlands. Ella is a haven for nature lovers and trekkers.</p>
+  </section>
 </main>
 
-<footer class="bg-[var(--color-primary)] text-white py-6 mt-12">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between flex-wrap gap-4">
-    <p>&copy; 2025 TDivineSpark. All rights reserved.</p>
-    <nav class="space-x-4">
-      <a href="#" class="hover:underline">Privacy Policy</a>
-      <a href="#" class="hover:underline">Terms of Service</a>
-    </nav>
-  </div>
+<footer class="bg-[var(--color-primary)] text-[var(--color-light)] py-4 mt-8 text-center">
+  <p>&copy; 2025 TDivineSpark. All rights reserved.</p>
 </footer>
 
 </body>
